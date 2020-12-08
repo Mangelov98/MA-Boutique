@@ -1,0 +1,53 @@
+h1,span, form {
+    background: black;
+    background: grey;
+    text-align: center;
+}
+
+hr {
+    width: 30%;
+}
+.label-holder {
+    font-size: 20px;
+}
+small {
+    font-size: 15px;
+    color: red;
+}
+
+.form-control {
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    color: black;
+    line-height: 1.2;
+    height: 36px;
+    background: gray;
+    padding: 0 7px 0 43px;
+}
+
+select {
+    font-family: Poppins-Medium;
+    font-size: 15px;
+    color: black;
+    line-height: 1.2;
+    height: 36px;
+    background: gray;
+    padding: 0 7px 0 43px;
+
+}
+
+
+.button-holder button {
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 20px;
+    
+    padding: 5px 25px;
+    background: black;
+    color: white;
+}
+
+
+.button-holder h3 a {
+    color: black;
+}

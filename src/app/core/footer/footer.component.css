@@ -1,0 +1,18 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css';
+
+footer {
+    background: rgb(160, 3, 11);
+    margin-top: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1520px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+

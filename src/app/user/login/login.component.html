@@ -1,0 +1,33 @@
+<form #f="ngForm" class="login" (ngSubmit)="submitFormHandler(f.value)">
+    <h1><span>Login Form</span></h1>
+        <hr class="hr-3"/>
+        <div class="form-group">
+            <div class="label-holder">
+                <label for="username" class="h3 mb-2">Username</label>
+            </div>
+            <input #userUsername="ngModel" [class.input-error]="userUsername.touched && !!userUsername.errors" type="text" class="form-control" id="username"
+            name="username" placeholder="User123" ngModel appSubmitOnValid
+            (ngModelChangeIfValid)="changeHandler($event)" required />
+        </div>
+        <h6 *ngIf="userUsername.touched && userUsername.errors?.required" class="error">Wrong username</h6>
+        <div class="form-group">
+            <div class="label-holder ">
+                <label for="password" class="h3 mb-2">Password</label>
+            </div>
+            <input #userPassword="ngModel"  [class.input-error]="userPassword.touched && !!userPassword.errors" type="password" class="form-control"
+            id="password" name="password" placeholder="*******"   
+            ngModel required minlength="4"/>
+        </div>
+        <h6 *ngIf="userPassword.touched && userPassword.errors?.required" class="error">Wrong password</h6>
+        <h6 *ngIf="userPassword.touched && userPassword.errors?.minlength" class="error">
+            Password must be at least 4 characters!
+        </h6> 
+        <div class="button-holder">
+            <button [disabled]="isLoading || f.invalid">Login</button>
+            <app-loader [isLoading]="isLoading"></app-loader>
+
+            <h3>
+                <a class="text-primay" href="/user/register">Create your account</a>
+            </h3>
+        </div>
+    </form>

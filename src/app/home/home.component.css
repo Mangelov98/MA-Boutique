@@ -1,0 +1,21 @@
+.container {
+    background-image: url("./happy-shop-logo-template_57516-57.jpg");
+    background-position: right;
+    background-size: cover;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+
+}
+
+.sec-container {
+    background-image: url("./happy-shop-logo-template_57516-57.jpg");
+    background-position: right;
+    background-size: cover;
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+
+h3 a {
+    color: black;
+}
