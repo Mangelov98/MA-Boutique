@@ -1,5 +1,5 @@
 .container {
-    background-image: url("./happy-shop-logo-template_57516-57.jpg");
+    background-image: url("../../assets/happy-shop-logo-template_57516-57.jpg");
     background-position: right;
     background-size: cover;
     background-size: 20%;
@@ -9,7 +9,7 @@
 }
 
 .sec-container {
-    background-image: url("./happy-shop-logo-template_57516-57.jpg");
+    background-image: url("../../assets/happy-shop-logo-template_57516-57.jpg");
     background-position: right;
     background-size: cover;
     background-size: 20%;

@@ -6,11 +6,12 @@ import { ItemRoutingModule } from './item-routing.module';
 import { DetailsComponent } from './details/details.component';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { ItemListComponent } from './item-list/item-list.component';
 
 
 
 @NgModule({
-  declarations: [NewComponent,ItemComponent, DetailsComponent],
+  declarations: [NewComponent,ItemComponent, DetailsComponent, ItemListComponent],
   imports: [
     CommonModule,
     ItemRoutingModule,

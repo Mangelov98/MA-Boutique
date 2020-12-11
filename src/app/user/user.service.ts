@@ -24,4 +24,10 @@ export class UserService {
     this.storage.setItem('isLogged', false);
     return of(null).pipe(delay(3000));
   }
+
+  register(data: any): Observable<any> {
+    this.isLogged = false;
+    this.storage.setItem('isLogged', false);
+    return of(data).pipe(delay(3000));
+  }
 }
